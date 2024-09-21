@@ -181,3 +181,98 @@ nav {
   margin-left: 1.2rem;
   margin-bottom: 2rem;
 }
+
+/* Slider section */
+.slider__section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--darkBlue);
+  margin-bottom: 4rem;
+}
+
+.pfp img {
+  display: block;
+  max-width: 5rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.slider h4 {
+  text-align: center;
+  color: var(--darkBlue);
+  padding-block: 1.3rem;
+}
+
+.slider p {
+  max-width: 21rem;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  line-height: 1.6rem;
+  color: var(--grayishBlue);
+  font-weight: 300;
+}
+
+/* Slider dots */
+.slider {
+  max-width: 100rem;
+  height: 18rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+  transition: transform 1s;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.dots__dot {
+  border: 1px solid var(--brightRed);
+  background-color: var(--lightGray);
+  opacity: 0.7;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: var(--brightRed);
+}
+
+.slider__section .cta__btn {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  border-radius: 3rem;
+  display: block;
+  max-width: 7rem;
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  box-shadow: 1px 6px 10px 1px hsla(12, 88%, 59%, 0.389);
+  outline: none;
+  padding-block: 0.9rem;
+  padding-inline: 1.3rem;
+  border: none;
+  background-color: var(--brightRed);
+  color: var(--lightGray);
+}

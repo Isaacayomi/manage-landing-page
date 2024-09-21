@@ -84,11 +84,13 @@ nav {
   font-weight: bolder;
   padding-inline: 1.5rem;
   padding-bottom: 1rem;
+  line-height: 2.5rem;
 }
 
 .heading__text p {
   max-width: 50rem;
   width: 100%;
+  margin-inline: auto;
   color: var(--grayishBlue);
   font-weight: 200;
   font-size: 1rem;
@@ -98,12 +100,13 @@ nav {
 }
 
 .section__1 button {
-  font-size: 0.8rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.75rem;
   font-weight: normal;
   border-radius: 3rem;
   display: block;
   max-width: 7rem;
-  width: 50%;
+  width: 100%;
   margin-inline: auto;
   margin-block: 1.5rem;
   box-shadow: 1px 6px 10px 1px hsla(12, 88%, 59%, 0.389);
@@ -113,4 +116,68 @@ nav {
   border: none;
   background-color: var(--brightRed);
   color: var(--lightGray);
+}
+
+.section__2 .text__section h2 {
+  max-width: 30rem;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 5rem;
+  padding-inline: 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--darkBlue);
+  line-height: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.section__2 .text__section p {
+  max-width: 50rem;
+  width: 100%;
+  margin-inline: auto;
+  color: var(--grayishBlue);
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+  padding-inline: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  font-family: "Be Vietnam Pro", sans-serif;
+  outline: none;
+  border: none;
+  border-radius: 1.2rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.6rem;
+  background-color: var(--brightRed);
+  color: var(--lightGray);
+  font-weight: bolder;
+}
+
+.highlight {
+  background-color: var(--paleRed);
+  border-radius: 1rem 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: 1.2rem;
+}
+
+.highlight__heading {
+  color: var(--darkBlue);
+  font-size: 1rem;
+  padding-block: 0.6rem;
+}
+
+.highlight__text {
+  color: var(--grayishBlue);
+  font-weight: 300;
+  font-size: 1rem;
+  padding-right: 1rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  margin-bottom: 2rem;
 }

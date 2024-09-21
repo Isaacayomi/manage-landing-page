@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
 
     <title>Frontend Mentor | Manage landing page</title>
@@ -25,29 +31,37 @@
         <ul class="nav__lists">
           <li class="nav__items"><a href="#">Pricing</a></li>
           <li class="nav__items"><a href="#">Product</a></li>
-          <li class="nav__items"><a href="#">About</a> Us</li>
+          <li class="nav__items"><a href="#">About Us</a></li>
           <li class="nav__items"><a href="#">Careers</a></li>
           <li class="nav__items"><a href="#">Community</a></li>
         </ul>
 
-        <button>Get Started</button>
+        <div class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="hamburger-icon" />
+        </div>
       </nav>
+      <button class="nav__cta">Get Started</button>
     </header>
 
+    <div class="bg__image">
+      <img src="./images/bg-tablet-pattern.svg" alt="bg__image" />
+    </div>
     <main>
-      <section class="hero__section">
-        <div class="heading__text">
-          <h1>Bring everyone together to build better products.</h1>
-          <p>
-            Manage makes it simple for software teams to plan day-to-day taks
-            whiel keeping the larger team goals in view.
-          </p>
-          <button class="cta__btn">Get Started</button>
-        </div>
-      </section>
+      <section class="section__1">
+        <section class="hero__section">
+          <div class="heading__text">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>
+              Manage makes it simple for software teams to plan day-to-day taks
+              while keeping the larger team goals in view.
+            </p>
+            <button class="cta__btn">Get Started</button>
+          </div>
+        </section>
 
-      <section class="illustration">
-        <img src="./images/illustration-intro.svg" alt="illustration-intro" />
+        <section class="illustration">
+          <img src="./images/illustration-intro.svg" alt="illustration-intro" />
+        </section>
       </section>
 
       <section class="section__2">
@@ -204,7 +218,11 @@
       </div>
 
       <div class="footer__nav__3">
-        <input type="email" class="input__email" placeholder="Updates in your inbox...">
+        <input
+          type="email"
+          class="input__email"
+          placeholder="Updates in your inbox..."
+        />
         <button>Go</button>
       </div>
       <p>copyright 2020. All Rights Reserved</p>

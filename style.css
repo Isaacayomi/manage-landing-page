@@ -1,5 +1,116 @@
+:root {
+  --brightRed: hsl(12, 88%, 59%);
+  --darkBlue: hsl(228, 39%, 23%);
+  --grayishBlue: hsl(227, 12%, 61%);
+  --deepBlue: hsl(233, 12%, 13%);
+  --paleRed: hsl(13, 100%, 96%);
+  --lightGray: hsl(0, 0%, 98%);
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background-image: url("./images/bg-simplify-section-mobile.svg");
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+}
+
+.logo a img,
+.hamburger img {
+  max-width: 8rem;
+  width: 100%;
+}
+
+.hamburger img:hover {
+  cursor: pointer;
+}
+
+.nav__lists {
+  display: none;
+}
+
+.nav__cta {
+  display: none;
+}
+
+.bg__image {
+  max-width: 35rem;
+  position: absolute;
+  top: -4%;
+  right: -10%;
+  z-index: -1;
+}
+
+.bg__image img {
+  width: 100%;
+}
+
+.section__1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration img {
+  padding-inline: 1.5rem;
+  max-width: 50rem;
+  width: 100%;
+}
+
+.heading__text h1 {
+  color: var(--darkBlue);
+  font-size: 2rem;
+  max-width: 50rem;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  font-weight: bolder;
+  padding-inline: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.heading__text p {
+  max-width: 50rem;
+  width: 100%;
+  color: var(--grayishBlue);
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+  padding-inline: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.section__1 button {
+  font-size: 0.8rem;
+  font-weight: normal;
+  border-radius: 3rem;
+  display: block;
+  max-width: 7rem;
+  width: 50%;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  box-shadow: 1px 6px 10px 1px hsla(12, 88%, 59%, 0.389);
+  outline: none;
+  padding-block: 0.9rem;
+  padding-inline: 1.3rem;
+  border: none;
+  background-color: var(--brightRed);
+  color: var(--lightGray);
 }

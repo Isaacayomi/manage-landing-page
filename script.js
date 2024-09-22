@@ -80,9 +80,10 @@ dotContainer.addEventListener("click", function (e) {
 const ValidateEmail = () => {
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!emailInput.value.match(mailformat)) {
-    console.log("wrong email format");
+    alert("Please enter a correct mail");
   } else {
-    console.log("Get in jhoorrrr");
+    alert("Updates has been sent to your inbox");
+    emailInput.value = "";
   }
   return;
 };

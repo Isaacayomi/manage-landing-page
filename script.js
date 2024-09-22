@@ -6,6 +6,10 @@ const dotContainer = document.querySelector(".dots");
 let curSlide = 0;
 let maxSlide = slides.length - 1;
 
+// Email
+const emailInput = document.querySelector(".input__email");
+const submitBtn = document.querySelector(".submit");
+
 const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
@@ -23,7 +27,7 @@ const activateDot = function (slide) {
 
   document
     .querySelector(`.dots__dot[data-slide="${slide}"]`)
-    .classList.add('dots__dot--active');
+    .classList.add("dots__dot--active");
 };
 
 slides.forEach(function (slide, i) {
@@ -70,4 +74,24 @@ dotContainer.addEventListener("click", function (e) {
     goToSlide(slide);
     activateDot(slide);
   }
+});
+
+// Validate email
+const ValidateEmail = () => {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (!emailInput.value.match(mailformat)) {
+    console.log("wrong email format");
+  } else {
+    console.log("Get in jhoorrrr");
+  }
+  return;
+};
+
+// Event listeners
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  ValidateEmail();
+});
+emailInput.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") ValidateEmail();
 });

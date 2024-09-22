@@ -349,7 +349,7 @@ footer {
   color: var(--lightGray);
   font-size: 1rem;
   font-weight: 300;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .footer__nav__basic ul li a:hover {
@@ -387,4 +387,49 @@ footer {
   border: none;
   background-color: var(--brightRed);
   color: var(--lightGray);
+}
+
+.footer__elements {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.footer__nav__3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.5rem;
+}
+
+.input__email {
+  width: 90%;
+}
+
+.footer__nav__3 .cta__btn {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  display: block;
+  max-width: 7rem;
+  width: 30%;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  outline: none;
+  padding-block: 0.7rem;
+  padding-inline: 1.3rem;
+  border: none;
+  background-color: var(--brightRed);
+  color: var(--lightGray);
+}
+
+.footer__nav__basic {
+    margin-inline: 1rem;
+    margin-bottom: 2.7rem;
+}
+
+.footer__nav__1 {
+    margin-right: 2rem;
 }

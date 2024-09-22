@@ -1,10 +1,10 @@
 :root {
-  --brightRed: hsl(12, 88%, 59%);
+  --brightRed: #f25f3a;
   --darkBlue: hsl(228, 39%, 23%);
   --grayishBlue: hsl(227, 12%, 61%);
   --deepBlue: hsl(233, 12%, 13%);
   --paleRed: hsl(13, 100%, 96%);
-  --lightGray: hsl(0, 0%, 98%);
+  --lightGray: #fafafa;
 }
 
 * {
@@ -305,7 +305,7 @@ nav {
 }
 
 .section__3 button {
-    font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
   border-radius: 3rem;
@@ -321,4 +321,70 @@ nav {
   border: none;
   background-color: var(--lightGray);
   color: var(--brightRed);
+}
+
+footer {
+  background-color: var(--deepBlue);
+}
+
+.socials ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.socials ul img {
+  display: block;
+  width: 2rem;
+}
+
+.footer__nav__basic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.footer__nav__basic ul li a {
+  color: var(--lightGray);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.footer__nav__basic ul li a:hover {
+  cursor: pointer;
+}
+
+.input__email {
+  width: 55%;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding-block: 0.8rem;
+  padding-inline: 1rem;
+}
+
+.input__email::placeholder {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.9em;
+}
+
+.footer_nav__3 button.cta__btn {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  border-radius: 3rem;
+  display: block;
+  max-width: 7rem;
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  box-shadow: 1px 6px 10px 1px hsla(12, 88%, 59%, 0.389);
+  outline: none;
+  padding-block: 0.9rem;
+  padding-inline: 1.3rem;
+  border: none;
+  background-color: var(--brightRed);
+  color: var(--lightGray);
 }

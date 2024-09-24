@@ -1,7 +1,7 @@
 :root {
   --brightRed: #f25f3a;
   --darkBlue: hsl(228, 39%, 23%);
-  --grayishBlue: hsl(227, 12%, 61%);
+  --grayishBlue: #9095a7;
   --deepBlue: hsl(233, 12%, 13%);
   --paleRed: hsl(13, 100%, 96%);
   --lightGray: #fafafa;
@@ -43,12 +43,15 @@ nav {
 
 .nav__lists {
   display: none;
-  position: absolute;
-  top: 2.7%;
   width: 85%;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translateX(-50%);
   margin: auto;
   background-color: var(--lightGray);
   padding: 2.5rem;
+  box-shadow: 1px 2rem 3rem #9095a77f ;
 }
 
 .nav__lists li {

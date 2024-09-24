@@ -51,7 +51,7 @@ nav {
   margin: auto;
   background-color: var(--lightGray);
   padding: 2.5rem;
-  box-shadow: 1px 2rem 3rem #9095a77f ;
+  box-shadow: 1px 2rem 3rem #9095a77f;
 }
 
 .nav__lists li {
@@ -85,7 +85,7 @@ nav {
   position: absolute;
   top: -4%;
   right: -10%;
-  z-index: -1;
+  z-index: -100;
 }
 
 .bg__image img {
@@ -488,4 +488,87 @@ p.copyright {
   font-weight: 300;
   font-size: 0.8rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-inline: 1rem; */
+    width: 100%;
+  }
+
+  ul.nav__lists {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    top: 0;
+    padding-block: 1.8rem;
+    justify-content: center;
+    background-color: unset;
+    box-shadow: none;
+    margin-inline: 1rem;
+  }
+
+  .nav__lists li a {
+    margin-block: 0;
+  }
+
+  .hamburger__icon {
+    display: none;
+  }
+
+  .nav__cta {
+    display: block;
+    font-family: "Be Vietnam Pro", sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 1.2rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.6rem;
+    background-color: var(--brightRed);
+    color: var(--lightGray);
+    font-weight: bolder;
+    box-shadow: 1px 5px 10px 1px hsla(12, 88%, 59%, 0.212);
+  }
+
+  .section__1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .hero__section {
+    margin-left: 1.7rem;
+  }
+
+  .heading__text h1 {
+    max-width: 23rem;
+    width: 100%;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    padding-inline: 0;
+  }
+
+  .heading__text p {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 35rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .section__1 button {
+    margin-inline: 0;
+    max-width: 8rem;
+  }
 }

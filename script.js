@@ -122,7 +122,7 @@ emailInput.addEventListener("keyup", (e) => {
 });
 
 hamburger.addEventListener("click", toggleNav);
-mainEl.addEventListener("click", closeNav);
+
 navItems.forEach(function (it) {
   it.addEventListener("click", function () {
     closeNav();

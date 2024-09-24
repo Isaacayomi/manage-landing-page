@@ -3,6 +3,7 @@ const bodyEl = document.querySelector("body");
 const hamburger = document.querySelector(".hamburger__icon");
 const navLists = document.querySelector(".nav__lists");
 const mainEl = document.querySelector("main");
+const navItems = document.querySelectorAll(".nav__items");
 
 // slider section
 const slides = document.querySelectorAll(".slide");
@@ -25,11 +26,7 @@ const closeNav = () => {
 };
 
 const toggleNav = () => {
-  if (navLists.style.display === "none") {
-    openNav();
-  } else {
-    closeNav();
-  }
+  navLists.style.display === "none" ? openNav() : closeNav();
 };
 
 // Email
@@ -126,3 +123,8 @@ emailInput.addEventListener("keyup", (e) => {
 
 hamburger.addEventListener("click", toggleNav);
 mainEl.addEventListener("click", closeNav);
+navItems.forEach(function (it) {
+  it.addEventListener("click", function () {
+    closeNav();
+  });
+});

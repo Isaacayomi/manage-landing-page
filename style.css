@@ -426,10 +426,35 @@ footer {
 }
 
 .footer__nav__basic {
-    margin-inline: 1rem;
-    margin-bottom: 2.7rem;
+  margin-inline: 1rem;
+  margin-bottom: 2.7rem;
 }
 
 .footer__nav__1 {
-    margin-right: 2rem;
+  margin-right: 2rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.socials {
+  margin-bottom: 2.7rem;
+}
+
+.footer__logo__img {
+  margin-left: 12.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+p.copyright {
+  text-align: center;
+  color: var(--grayishBlue);
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
 }

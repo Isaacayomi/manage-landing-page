@@ -1,10 +1,33 @@
 "use strict";
+const bodyEl = document.querySelector("body");
+const hamburger = document.querySelector(".hamburger__icon");
+const navLists = document.querySelector(".nav__lists");
+
 // slider section
 const slides = document.querySelectorAll(".slide");
 const slider = document.querySelector(".slider");
 const dotContainer = document.querySelector(".dots");
 let curSlide = 0;
 let maxSlide = slides.length - 1;
+
+// Navbar
+const toggleNav = () => {
+  if ((navLists.style.display = "none")) {
+    navLists.style.display = "block";
+    bodyEl.classList.add("blur__background");
+    hamburger.src = "./images/icon-close.svg";
+  }
+};
+
+// const closeNav = () => {
+//   if ((navLists.style.display = "block")) {
+//     navLists.style.display = "none";
+//     bodyEl.classList.remove("blur__background");
+//     hamburger.src = "./images/icon-hamburger.svg";
+//   }
+// };
+
+hamburger.addEventListener("click", toggleNav);
 
 // Email
 const emailInput = document.querySelector(".input__email");

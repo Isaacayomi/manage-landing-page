@@ -571,4 +571,24 @@ p.copyright {
     margin-inline: 0;
     max-width: 8rem;
   }
+
+  .section__2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-inline:1.2rem;
+  }
+
+  .section__2 .text__section h2 {
+  margin: 0;
+  text-align: left;
+  max-width: 40rem;
+  width: 100%;
+  }
+
+  .section__2 .text__section p {
+    text-align: left;
+    
+  }
 }

@@ -661,7 +661,7 @@ p.copyright {
   }
 }
 
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1200px) {
   body {
     padding-inline: 8rem;
     max-width: 1440px;

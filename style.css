@@ -67,8 +67,6 @@ nav {
   color: var(--darkBlue);
   font-weight: 600;
   margin-block: 0.7rem;
-
-  /* margin-bottom: 1rem; */
 }
 
 .blur__background {
@@ -495,7 +493,6 @@ p.copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-inline: 1rem; */
     width: 100%;
   }
 
@@ -586,6 +583,7 @@ p.copyright {
     text-align: left;
     max-width: 40rem;
     width: 100%;
+    margin-bottom: 0.7rem;
   }
 
   .section__2 .text__section p {
@@ -613,11 +611,12 @@ p.copyright {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    /* margin-inline: 1.8rem; */
-  }
   header {
     padding-inline: 1.2rem;
+  }
+
+  .section__2 {
+    gap: 3rem;
   }
 
   .heading__text h1 {
@@ -669,5 +668,4 @@ p.copyright {
     width: 100%;
     margin-inline: auto;
   }
-
 }

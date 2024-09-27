@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://manage-landing-page-taupe-psi.vercel.app/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://manage-landing-page-taupe-psi.vercel.app/)
+- Solution URL: (https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5/hub?share=true)
 
 
 ### Built with
